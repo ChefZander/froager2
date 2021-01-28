@@ -7,9 +7,9 @@ local function item_orb(color, color_capitalised)
     })
 end
 
-craft_energized_supremium_ingot(red)
-craft_energized_supremium_ingot(blue)
-craft_energized_supremium_ingot(green)
+item_orb(red)
+item_orb(blue)
+item_orb(green)
 
 minetest.register_craftitem("froager2:green_energy", { --energys
     description = "Green Energy",
