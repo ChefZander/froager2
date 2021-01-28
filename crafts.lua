@@ -7,30 +7,19 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craft({
-	output = 'froager2:green_energized_supremium_ingot',
-	recipe = {
-		{'froager2:green_energy', 'froager2:green_energy', 'froager2:green_energy'},
-		{'froager2:green_energy', 'froager2:supremium_ingot', 'froager2:green_energy'},
-		{'froager2:green_energy', 'froager2:green_energy', 'froager2:green_energy'},
-	}
+local function craft_energized_supremium_ingot(color)
+  minetest.register_craft({
+    	output = "froager2:" .. color .. "_energized_supremium_ingot",
+    	recipe = {
+	    	{"froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy"},
+		    {"froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy"},
+		    {"froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy"},
+     	}
 })
-minetest.register_craft({
-	output = 'froager2:blue_energized_supremium_ingot',
-	recipe = {
-		{'froager2:blue_energy', 'froager2:blue_energy', 'froager2:blue_energy'},
-		{'froager2:blue_energy', 'froager2:supremium_ingot', 'froager2:blue_energy'},
-		{'froager2:blue_energy', 'default:glass', 'froager2:blue_energy'},
-	}
-})
-minetest.register_craft({
-	output = 'froager2:red_energized_supremium_ingot',
-	recipe = {
-		{'froager2:red_energy', 'froager2:red_energy', 'froager2:red_energy'},
-		{'froager2:red_energy', 'froager2:supremium_ingot', 'froager2:red_energy'},
-		{'froager2:red_energy', 'froager2:red_energy', 'froager2:red_energy'},
-	}
-})
+
+craft_energized_supremium_ingot(red)
+craft_energized_supremium_ingot(blue)
+craft_energized_supremium_ingot(green)
 
 local function craft_energized_supremium_pick(color)
    minetest.register_craft({
