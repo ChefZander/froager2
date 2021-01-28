@@ -11,18 +11,16 @@ item_orb("red", "Red")
 item_orb("blue", "Blue")
 item_orb("green", "Green")
 
-minetest.register_craftitem("froager2:green_energy", { --energys
-    description = "Green Energy",
-    inventory_image = "green_energy.png",
-})
-minetest.register_craftitem("froager2:blue_energy", {
-    description = "Blue Energy",
-    inventory_image = "blue_energy.png",
-})
-minetest.register_craftitem("froager2:red_energy", {
-    description = "Red Energy",
-    inventory_image = "red_energy.png",
-})
+local function item_energy(color, color_capitalised)
+    minetest.register_craftitem("froager2:" .. color .. "_energy", { --energys
+      description = color_capitalised .. " Energy",
+      inventory_image = color .. "_energy.png",
+    })
+end
+
+item_energy("red", "Red")
+item_energy("blue", "Blue")
+item_energy("green", "Green")
 
 minetest.register_craftitem("froager2:supremium_ingot", {
     description = "Supremium Ingot",
