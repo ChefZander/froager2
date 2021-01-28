@@ -31,3 +31,28 @@ minetest.register_craft({
 		{'froager2:red_energy', 'froager2:red_energy', 'froager2:red_energy'},
 	}
 })
+
+minetest.register_craft({
+	output = 'froager2:green_energized_supremium_pickaxe',
+	recipe = {
+		{"froager2:green_energized_supremium_ingot", "froager2:green_energized_supremium_ingot", "froager2:green_energized_supremium_ingot"},
+		{"", "default:stick", ""},
+		{"", "default:stick", ""},
+	}
+})
+minetest.register_craft({
+	output = 'froager2:blue_energized_supremium_pickaxe',
+	recipe = {
+		{"froager2:blue_energized_supremium_ingot", "froager2:blue_energized_supremium_ingot", "froager2:blue_energized_supremium_ingot"},
+		{"", "default:stick", ""},
+		{"", "default:stick", ""},
+	}
+})
+minetest.register_craft({
+	output = 'froager2:red_energized_supremium_pickaxe',
+	recipe = {
+		{"froager2:red_energized_supremium_ingot", "froager2:red_energized_supremium_ingot", "froager2:red_energized_supremium_ingot"},
+		{"", "default:stick", ""},
+		{"", "default:stick", ""},
+	}
+})
