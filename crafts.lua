@@ -18,9 +18,9 @@ local function craft_energized_supremium_ingot(color)
   })
 end
 
-craft_energized_supremium_ingot(red)
-craft_energized_supremium_ingot(blue)
-craft_energized_supremium_ingot(green)
+craft_energized_supremium_ingot("red")
+craft_energized_supremium_ingot("blue")
+craft_energized_supremium_ingot("green")
 
 local function craft_energized_supremium_pick(color)
    minetest.register_craft({
@@ -33,6 +33,6 @@ local function craft_energized_supremium_pick(color)
    })
 end
 
-craft_energized_supremium_pick(red)
-craft_energized_supremium_pick(blue)
-craft_energized_supremium_pick(green)
+craft_energized_supremium_pick("red")
+craft_energized_supremium_pick("blue")
+craft_energized_supremium_pick("green")
