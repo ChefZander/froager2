@@ -1,7 +1,7 @@
-local function register_energixed_supremium_pick(color, description)
-  minetest.register_tool("froager2:" .. color .. "_energized_supremium_pickaxe", {
-      description = description,
-      inventory_image = color .. "_energized_supremium_pickaxe.png",
+local function register_energixed_supremium_pick(color, color_capitalized)
+  minetest.register_tool("froager2:pick_energized_supremium_"..color, {
+      description = color_capitalized.." Energized Supremium Pickaxe",
+      inventory_image = "froager2_pick_energized_supremium_"..color..".png",
       tool_capabilities = {
           max_drop_level=3,
           groupcaps= {
@@ -11,6 +11,6 @@ local function register_energixed_supremium_pick(color, description)
   })
 end
 
-register_energixed_supremium_pick("red", "Red Energized Supremium Pickaxe")
-register_energixed_supremium_pick("green", "Green Energized Supremium Pickaxe")
-register_energixed_supremium_pick("blue", "Blue Energized Supremium Pickaxe")
+register_energixed_supremium_pick("red", "Red")
+register_energixed_supremium_pick("green", "Green")
+register_energixed_supremium_pick("blue", "Blue")

@@ -1,8 +1,8 @@
 local function oven_recipe(color)
    minetest.register_craft({
     	type = "cooking",
-    	recipe = "froager2:" .. color .. "_orb",
-    	output = "froager2:" .. color .. "_energy",
+    	recipe = "froager2:orb_"..color,
+    	output = "froager2:energy_"..color,
    })
 end
 
