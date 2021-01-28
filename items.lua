@@ -7,9 +7,9 @@ local function item_orb(color, color_capitalised)
     })
 end
 
-item_orb(red)
-item_orb(blue)
-item_orb(green)
+item_orb("red", "Red")
+item_orb("blue", "Blue")
+item_orb("green", "Green")
 
 minetest.register_craftitem("froager2:green_energy", { --energys
     description = "Green Energy",
