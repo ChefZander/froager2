@@ -15,7 +15,8 @@ local function craft_energized_supremium_ingot(color)
 		    {"froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy"},
 		    {"froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy", "froager2:" .. color .. "_energy"},
      	}
-})
+  })
+end
 
 craft_energized_supremium_ingot(red)
 craft_energized_supremium_ingot(blue)
