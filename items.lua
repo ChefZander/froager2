@@ -43,3 +43,7 @@ minetest.register_craftitem("froager2:red_energized_supremium_ingot", {
     description = "Red Energized Supremium Ingot",
     inventory_image = "red_energized_supremium_ingot.png",
 })
+minetest.register_craftitem("froager2:supremium_singularity", {
+    description = "Supremium Singularity",
+    inventory_image = "missing.png",
+})
