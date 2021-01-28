@@ -1,9 +1,9 @@
 minetest.register_craft({
-	output = 'froager2:supremium_ingot',
+	output = "froager2:supremium_ingot",
 	recipe = {
-		{'default:glass', 'default:glass', 'default:glass'},
-		{'default:glass', 'default:mese', 'default:glass'},
-		{'default:glass', 'default:glass', 'default:glass'},
+		{"default:glass", "default:glass", "default:glass"},
+		{"default:glass", "default:mese", "default:glass"},
+		{"default:glass", "default:glass", "default:glass"},
 	}
 })
 
