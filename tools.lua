@@ -14,3 +14,4 @@ end
 register_energixed_supremium_pick("red", "Red")
 register_energixed_supremium_pick("green", "Green")
 register_energixed_supremium_pick("blue", "Blue")
+register_energixed_supremium_pick("purple", "Purple")
