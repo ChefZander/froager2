@@ -27,18 +27,17 @@ minetest.register_craftitem("froager2:supremium_ingot", {
     inventory_image = "supremium_ingot.png",
 })
 
-minetest.register_craftitem("froager2:green_energized_supremium_ingot", {
-    description = "Green Energized Supremium Ingot",
-    inventory_image = "green_energized_supremium_ingot.png",
-})
-minetest.register_craftitem("froager2:blue_energized_supremium_ingot", {
-    description = "Blue Energized Supremium Ingot",
-    inventory_image = "blue_energized_supremium_ingot.png",
-})
-minetest.register_craftitem("froager2:red_energized_supremium_ingot", {
-    description = "Red Energized Supremium Ingot",
-    inventory_image = "red_energized_supremium_ingot.png",
-})
+local function item_energized_supremium_ingot(color, color_capitalized)
+   minetest.register_craftitem("froager2:" .. color .. "_energized_supremium_ingot", {
+       description = color_apitalized .. " Energized Supremium Ingot",
+       inventory_image = color .. "_energized_supremium_ingot.png",
+   })
+end
+
+item_energized_supremium_ingot("red", "Red")
+item_energized_supremium_ingot("green", "Green")
+item_energized_supremium_ingot("blue", "Blue")
+
 minetest.register_craftitem("froager2:supremium_singularity", {
     description = "Supremium Singularity",
     inventory_image = "missing.png",
