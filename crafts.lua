@@ -58,18 +58,19 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "froager2:fusioncore",
-	recipe = {
-		{"", "froager2:energy_kinetic_red", ""},
-		{"froager2:kinetic_energy_green", "froager2:steel_rod", "froager2:energy_kinetic_blue"},
-		{"", "froager2:energy_kinetic_purple", ""},
-	}
-})
-minetest.register_craft({
 	output = "froager2:steel_rod",
 	recipe = {
 		{"", "", "default:steel_ingot"},
 		{"", "default:steel_ingot", ""},
 		{"default:steel_ingot", "", ""},
 	},
+})
+
+minetest.register_craft({
+	output = "froager2:fusioncore",
+	recipe = {
+		{"", "froager2:energy_kinetic_red", ""},
+		{"froager2:energy_kinetic_green", "froager2:steel_rod", "froager2:energy_kinetic_blue"},
+		{"", "froager2:energy_kinetic_purple", ""},
+	}
 })
