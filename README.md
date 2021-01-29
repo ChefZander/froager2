@@ -2,7 +2,7 @@
 Minetest Mod lol
 
 #### License for Code
-LGPL 3.0
+LGPL 2.1
 Original Code by Zander_200
 Modified by every contributor
 
