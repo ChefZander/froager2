@@ -1,8 +1,8 @@
 minetest.register_biome({
-    name = "Insolated Biome",
+    name = "insolated",
     node_top = "froager2:dirt_energized",
     depth_top = 1,
-    node_filler = "froager:dirt",
+    node_filler = "froager2:dirt",
     depth_filler = 5,
     node_stone = "froager2:stone",
     node_water_top = "",
@@ -17,7 +17,7 @@ minetest.register_biome({
     node_dungeon_stair = "",
     y_max = 31000,
     y_min = 1,
-    vertical_blend = 0,
+    vertical_blend = 8,
     heat_point = 0,
     humidity_point = 50,
 })
