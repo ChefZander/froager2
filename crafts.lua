@@ -48,3 +48,11 @@ minetest.register_craft({
 	},
 })
 
+minetest.register_craft({
+	output = "froager2:fusionator",
+	recipe = {
+		{"", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})

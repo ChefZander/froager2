@@ -3,6 +3,10 @@ minetest.register_craftitem("froager2:fusionator", {
   description = "Fusionator",
   inventory_image = "froager2_fusionator.png",
 })
+minetest.register_craftitem("froager2:fusioncore", {
+  description = "Fusion Core",
+  inventory_image = "missing.png",
+})
 --orbs
 local function item_orb(color, color_capitalised)
     minetest.register_craftitem("froager2:orb_".. color, {
@@ -16,7 +20,7 @@ item_orb("blue", "Blue")
 item_orb("green", "Green")
 item_orb("purple", "Purple")
 
---energy
+--energy (normal)
 local function item_energy(color, color_capitalised)
     minetest.register_craftitem("froager2:energy_"..color, {
       description = color_capitalised .. " Energy",
@@ -28,6 +32,20 @@ item_energy("red", "Red")
 item_energy("blue", "Blue")
 item_energy("green", "Green")
 item_energy("purple", "Purple")
+
+--energy (kinetic)
+minetest.register_craftitem("froager2:kinetic_energy_green", {
+  description = "Green Kinetic Energy",
+  inventory_image = "missing.png",
+})
+minetest.register_craftitem("froager2:kinetic_energy_blue", {
+  description = "Blue Kinetic Energy",
+  inventory_image = "missing.png",
+})
+minetest.register_craftitem("froager2:kinetic_energy_red", {
+  description = "Red Kinetic Energy",
+  inventory_image = "missing.png",
+})
 
 --ingots
 minetest.register_craftitem("froager2:supremium_ingot", {
