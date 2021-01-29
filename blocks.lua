@@ -21,4 +21,12 @@ minetest.register_node("froager2:forge", {
 	description = "Forge",
 	tiles = "froager2_missing.png",
 	groups = {cracky = 3},
+	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
+		local smartfs = dofile(minetest.get_modpath("froager2").."/smartfs.lua")
+		local myform = smartfs.create("Forge",function(state)
+			state:size(5,5)
+			state:label(3,3,"label1", "Forge")
+		end)
+		myform:show(player:get_player_name())
+	end
 })
