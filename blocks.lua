@@ -48,3 +48,39 @@ minetest.register_node("froager2:ore_osphor", {
 		},
 	groups = {cracky = 3},
 })
+
+--natural nodes
+minetest.register_node("froager2:dirt", {
+	description = "Energized Dirt",
+	tiles = {"froager2_dirt.png"},
+	groups = {crumbly = 3, soil = 1},
+	sounds = default.node_sound_dirt_defaults(),
+})
+
+minetest.register_node("froager2:dirt_energized", {
+	description = "Insolated Energized Dirt",
+	tiles = {"froager2_dirt_energized_top.png", "froager2_dirt.png",
+		{name = "froager2_dirt.png^froager2_dirt_energized_side.png",
+			tileable_vertical = false}},
+	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
+	drop = "froager2:dirt",
+	sounds = default.node_sound_dirt_defaults({
+		footstep = {name = "default_grass_footstep", gain = 0.25},
+	}),
+})
+
+minetest.register_node("froager2:stone", {
+	description = "Energized Stone",
+	tiles = {"froager2_stone.png"},
+	groups = {cracky = 3, stone = 1},
+	drop = "froager2:cobble",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("froager2:cobble", {
+	description = "Cobbled Energized Stone",
+	tiles = {"froager2_cobble.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, stone = 2},
+	sounds = default.node_sound_stone_defaults(),
+})
