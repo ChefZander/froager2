@@ -38,7 +38,8 @@ item_energy("purple", "Purple")
 local function item_energy_kinetic(color, color_capitalised)
     minetest.register_craftitem("froager2:energy_kinetic_"..color, {
       description = color_capitalised .. " Kinetic Energy",
-      inventory_image = "froager2_energy_kinetic_"..color..".png",
+      --inventory_image = "froager2_energy_"..color..".png^froager2_energy_kinetic_overlay.png",
+	  inventory_image = "froager2_energy_"..color..".png^[mask:froager2_energy_kinetic_overlay.png" --apply the overlay as a mask (uses binary and)
     })
 end
 
