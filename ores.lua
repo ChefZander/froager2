@@ -14,3 +14,4 @@ end
 ore_register("red")
 ore_register("blue")
 ore_register("green")
+ore_register("purple")

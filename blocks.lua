@@ -15,3 +15,4 @@ end
 ore_register("green", "Green Orb Ore <Hidden>")
 ore_register("blue", "Blue Orb Ore <Hidden")
 ore_register("red", "Red Orb Ore <Hidden>")
+ore_register("purple", "Purple Orb Ore <Hidden>")
