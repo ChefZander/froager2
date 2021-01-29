@@ -68,8 +68,8 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "froager2:steel_bar",
 	recipe = {
-		{"", "", ""},
-		{"", "", ""},
-		{"", "", ""},
+		{"", "", "default:steel_ingot"},
+		{"", "default:steel_ingot", ""},
+		{"default:steel_ingot", "", ""},
 	},
 })
