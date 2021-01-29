@@ -38,3 +38,13 @@ end
 craft_energized_supremium_pick("red")
 craft_energized_supremium_pick("blue")
 craft_energized_supremium_pick("green")
+
+minetest.register_craft({
+	output = "froager2:supremium_singularity",
+	recipe = {
+		{"", "froager2:energized_supremium_ingot_red", ""},
+		{"froager2:energized_supremium_ingot_green", "froager2:fusionator", "froager2:energized_supremium_ingot_blue"},
+		{"", "froager2:energized_supremium_ingot_purple", ""},
+	},
+})
+
