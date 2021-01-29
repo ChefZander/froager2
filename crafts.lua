@@ -51,9 +51,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "froager2:fusionator",
 	recipe = {
-		{"", "", ""},
-		{"", "", ""},
-		{"", "", ""},
+		{"", "froager2:steel_bar", ""},
+		{"froager2:steel_bar", "froager2:fusioncore", "froager2:steel_bar"},
+		{"", "froager2:steel_bar", ""},
 	}
 })
 minetest.register_craft({
