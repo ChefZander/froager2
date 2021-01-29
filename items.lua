@@ -76,7 +76,7 @@ minetest.register_craftitem("froager2:supremium_singularity", {
     description = "Supremium Singularity",
     inventory_image = "froager2_supremium_singularity.png",
 })
-minetest.register_craftitem("froager2:steel_bar", {
-  description = "Steel Bar",
-  inventory_image = "froager2_steel_bar.png",
+minetest.register_craftitem("froager2:steel_rod", {
+  description = "Steel Rod",
+  inventory_image = "froager2_steel_rod.png",
 })
