@@ -19,7 +19,7 @@ ore_register("purple", "Purple Orb Ore <Hidden>")
 
 minetest.register_node("froager2:forge", {
 	description = "Forge",
-	tiles = "froager2_missing.png",
+	tiles = "missing.png",
 	groups = {cracky = 3},
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
 		local smartfs = dofile(minetest.get_modpath("froager2").."/smartfs.lua")
@@ -31,4 +31,10 @@ minetest.register_node("froager2:forge", {
 		end)
 		myform:show(player:get_player_name())
 	end
+})
+
+minetest.register_node("froager2:osphor_ore", {
+	description = "Osphor Ore <Hidden>",
+	tiles = "missing.png",
+	groups = {cracky = 3},
 })
