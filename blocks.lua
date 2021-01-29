@@ -25,7 +25,9 @@ minetest.register_node("froager2:forge", {
 		local smartfs = dofile(minetest.get_modpath("froager2").."/smartfs.lua")
 		local myform = smartfs.create("Forge",function(state)
 			state:size(5,5)
-			state:label(3,3,"label1", "Forge")
+			state:label(0,0,"label1", "Forge")
+			state:checkbox(1, 1, "chk1", "Ok")
+			state:inventory(0,1,1,1,"forge")
 		end)
 		myform:show(player:get_player_name())
 	end
