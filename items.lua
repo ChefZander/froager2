@@ -45,5 +45,5 @@ item_energized_supremium_ingot("green", "Green")
 --singularity
 minetest.register_craftitem("froager2:supremium_singularity", {
     description = "Supremium Singularity",
-    inventory_image = "missing.png",
+    inventory_image = "froager2_supremium_singularity.png",
 })
