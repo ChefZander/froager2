@@ -9,3 +9,4 @@ end
 oven_recipe("red")
 oven_recipe("green")
 oven_recipe("blue")
+oven_recipe("purple")
