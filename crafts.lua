@@ -38,6 +38,7 @@ end
 craft_energized_supremium_pick("red")
 craft_energized_supremium_pick("blue")
 craft_energized_supremium_pick("green")
+craft_energized_supremium_pick("purple")
 
 minetest.register_craft({
 	output = "froager2:supremium_singularity",
