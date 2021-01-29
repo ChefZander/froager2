@@ -56,3 +56,11 @@ minetest.register_craft({
 		{"", "", ""},
 	}
 })
+minetest.register_craft({
+	output = "froager2:fusioncore",
+	recipe = {
+		{"", "froager2:kinetic_energy_red", ""},
+		{"froager2:kinetic_energy_green", "froager2:steel_bar", "froager2:kinetic_energy_blue"},
+		{"", "froager2:kinetic_energy_purple", ""},
+	}
+})

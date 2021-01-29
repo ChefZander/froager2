@@ -46,6 +46,10 @@ minetest.register_craftitem("froager2:kinetic_energy_red", {
   description = "Red Kinetic Energy",
   inventory_image = "missing.png",
 })
+minetest.register_craftitem("froager2:kinetic_energy_purple", {
+  description = "Purple Kinetic Energy",
+  inventory_image = "missing.png",
+})
 
 --ingots
 minetest.register_craftitem("froager2:supremium_ingot", {
