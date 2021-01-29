@@ -1,5 +1,5 @@
 # froager2
-Minetest Mod lol
+Minetest Mod which adds endgame Items, Pickaxes and Blocks
 
 #### License for Code
 LGPL 2.1
