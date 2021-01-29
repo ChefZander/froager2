@@ -1,4 +1,8 @@
 --items
+minetest.register_craftitem("froager2:fusionator", {
+  description = "Fusionator",
+  inventory_image = "froager2_fusionator.png",
+})
 --orbs
 local function item_orb(color, color_capitalised)
     minetest.register_craftitem("froager2:orb_".. color, {
