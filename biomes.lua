@@ -17,7 +17,7 @@ minetest.register_biome({
     node_dungeon_stair = "",
     y_max = 31000,
     y_min = 1,
-    vertical_blend = 8,
+    vertical_blend = 0,
     heat_point = 0,
     humidity_point = 50,
 })

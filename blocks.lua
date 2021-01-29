@@ -80,7 +80,7 @@ minetest.register_node("froager2:stone", {
 minetest.register_node("froager2:cobble", {
 	description = "Cobbled Energized Stone",
 	tiles = {"froager2_cobble.png"},
-	is_ground_content = false,
+	-- is_ground_content = false,
 	groups = {cracky = 3, stone = 2},
 	sounds = default.node_sound_stone_defaults(),
 })
