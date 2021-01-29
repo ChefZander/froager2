@@ -54,6 +54,16 @@ minetest.register_craftitem("froager2:supremium_ingot", {
     inventory_image = "froager2_supremium_ingot.png",
 })
 
+minetest.register_craftitem("froager2:osphor_ingot", {
+    description = "Osphor Ingot",
+    inventory_image = "froager2_osphor_ingot.png",
+})
+
+minetest.register_craftitem("froager2:osphor_nugget", {
+    description = "Osphor Nugget",
+    inventory_image = "froager2_osphor_nugget.png",
+})
+
 --energized ingots
 local function item_energized_supremium_ingot(color, color_capitalised)
     minetest.register_craftitem("froager2:energized_supremium_ingot_"..color, {

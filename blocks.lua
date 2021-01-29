@@ -32,8 +32,19 @@ minetest.register_node("froager2:forge", {
 	end
 })
 
-minetest.register_node("froager2:osphor_ore", {
+minetest.register_node("froager2:ore_osphor", {
 	description = "Osphor Ore <Hidden>",
-	tiles = {"froager2_ore_osphor.png"},
+	tiles = {"default_stone.png^froager2_ore_osphor.png"},
+	drop = {
+			max_items = 3,
+			items = { --from low to high drop chance
+				--get from 1 up to 4 nuggets from osphor
+				{items = {"froager2:osphor_nugget"},
+				rarity = 20},
+				{items = {"froager2:osphor_nugget 2"},
+				rarity = 5},
+				{items = {"froager2:osphor_nugget"}}
+			}
+		},
 	groups = {cracky = 3},
 })
