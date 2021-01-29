@@ -65,3 +65,11 @@ minetest.register_craft({
 		{"", "froager2:kinetic_energy_purple", ""},
 	}
 })
+minetest.register_craft({
+	output = "froager2:steel_bar",
+	recipe = {
+		{"", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	},
+})
