@@ -35,6 +35,6 @@ minetest.register_node("froager2:forge", {
 
 minetest.register_node("froager2:osphor_ore", {
 	description = "Osphor Ore <Hidden>",
-	tiles = "froager2_ore_osphor.png",
+	tiles = {"froager2_ore_osphor.png"},
 	groups = {cracky = 3},
 })
