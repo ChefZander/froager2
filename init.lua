@@ -1,4 +1,5 @@
 local modpath = minetest.get_modpath("froager2")
+local smartfs = dofile(minetest.get_modpath(minetest.get_current_modname()).."/smartfs.lua")
 
 minetest.register_on_joinplayer(function(ObjectRef)
     minetest.chat_send_player(ObjectRef:get_player_name(), "Froager 2 - by Zander_200")
