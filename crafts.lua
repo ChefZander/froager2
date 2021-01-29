@@ -13,7 +13,7 @@ local function craft_energized_supremium_ingot(color)
     	output = "froager2:energized_supremium_ingot_"..color,
     	recipe = {
 		{m,m,m},
-		{m,m,m},
+		{m,"froager2:supremium_ingot",m},
 		{m,m,m},
 		}
 	})
