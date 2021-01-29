@@ -16,3 +16,9 @@ ore_register("green", "Green Orb Ore <Hidden>")
 ore_register("blue", "Blue Orb Ore <Hidden")
 ore_register("red", "Red Orb Ore <Hidden>")
 ore_register("purple", "Purple Orb Ore <Hidden>")
+
+minetest.register_node("froager2:forge", {
+	description = "Forge",
+	tiles = "froager2_missing.png",
+	groups = {cracky = 3},
+})
