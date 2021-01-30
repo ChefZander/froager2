@@ -15,3 +15,14 @@ register_energixed_supremium_pick("red", "Red")
 register_energixed_supremium_pick("green", "Green")
 register_energixed_supremium_pick("blue", "Blue")
 register_energixed_supremium_pick("purple", "Purple")
+
+minetest.register_tool("froager2:pick_osphor", {
+      description = "Osphor Pickaxe",
+      inventory_image = "missing.png",
+      tool_capabilities = {
+          max_drop_level=3,
+          groupcaps= {
+              cracky={times={[1]=0.5, [2]=0.75, [3]=1.00}, uses=130, maxlevel=1}
+          }
+      }
+  })
