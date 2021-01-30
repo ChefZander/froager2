@@ -3,7 +3,7 @@ Minetest Mod which adds endgame Items, Pickaxes and Blocks
 
 #### License for Code
 LGPL 2.1
-Original Code by Zander_200\n
+Original Code by Zander_200
 Modified by every contributor
 
 #### License for Media  
