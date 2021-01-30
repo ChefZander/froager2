@@ -17,21 +17,6 @@ ore_register("blue", "Blue Orb Ore <Hidden")
 ore_register("red", "Red Orb Ore <Hidden>")
 ore_register("purple", "Purple Orb Ore <Hidden>")
 
-minetest.register_node("froager2:forge", {
-	description = "Forge",
-	tiles = {"missing.png"},
-	groups = {cracky = 3},
-	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
-		local smartfs = dofile(minetest.get_modpath("froager2").."/smartfs.lua")
-		local myform = smartfs.create("Forge",function(state)
-			state:size(10,10)
-			state:label(0,0,"label1", "Forge")
-			state:inventory(0,1,100,100,"forge")
-		end)
-		myform:show(player:get_player_name())
-	end
-})
-
 minetest.register_node("froager2:ore_osphor", {
 	description = "Osphor Ore <Hidden>",
 	tiles = {"default_stone.png^froager2_ore_osphor.png"},

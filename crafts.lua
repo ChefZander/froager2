@@ -8,8 +8,8 @@ minetest.register_craft({
 })
 
 local function craft_energized_supremium_ingot(color)
-  local m = "froager2:energy_"..color
-  minetest.register_craft({
+	local m = "froager2:energy_"..color
+	minetest.register_craft({
     	output = "froager2:energized_supremium_ingot_"..color,
     	recipe = {
 		{m,m,m},
@@ -22,6 +22,7 @@ end
 craft_energized_supremium_ingot("red")
 craft_energized_supremium_ingot("blue")
 craft_energized_supremium_ingot("green")
+craft_energized_supremium_ingot("purple")
 
 local function craft_energized_supremium_pick(color)
 	local material = "froager2:energized_supremium_ingot_"..color
