@@ -69,3 +69,9 @@ minetest.register_node("froager2:cobble", {
 	groups = {cracky = 3, stone = 2},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+minetest.register_node("froager2:block_osphor", {
+	description = "Osphor Block",
+	tiles = {"missing.png"},
+	groups = {cracky = 2},
+})

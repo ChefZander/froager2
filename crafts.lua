@@ -93,3 +93,12 @@ minetest.register_craft({
 		{"", "default:stick", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:block_osphor",
+	recipe = {
+		{"osphor_ingot", "osphor_ingot", "osphor_ingot"},
+		{"osphor_ingot", "osphor_ingot", "osphor_ingot"},
+		{"osphor_ingot", "osphor_ingot", "osphor_ingot"},
+	}
+})
