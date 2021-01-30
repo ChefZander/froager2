@@ -1,18 +1,19 @@
 --items
-minetest.register_craftitem("froager2:fusionator", {
-  description = "Fusionator",
-  inventory_image = "froager2_fusionator.png",
-})
-minetest.register_craftitem("froager2:fusioncore", {
-  description = "Fusion Core",
-  inventory_image = "froager2_fusioncore.png",
-})
+local function craftitem_register(name, description, inv_img)
+  minetest.register_craftitem("froager2:" .. name, {
+    description = description,
+    inventory_image = inv_img,
+  })
+end
+
+craftitem_register("fusionator", "Fusionator", "froager2_fusionator.png")
+craftitem_register("fusioncore", "Fusion Core", "froager2_fusioncore.png")
 
 --orbs
 local function item_orb(color, color_capitalised)
-    minetest.register_craftitem("froager2:orb_".. color, {
+    minetest.register_craftitem("froager2:orb_" .. color, {
       description = color_capitalised .. " Orb",
-      inventory_image = "froager2_orb_"..color..".png",
+      inventory_image = "froager2_orb_" .. color .. ".png",
     })
 end
 
@@ -51,20 +52,10 @@ item_energy_kinetic("green", "Green")
 item_energy_kinetic("purple", "Purple")
 
 --ingots
-minetest.register_craftitem("froager2:supremium_ingot", {
-    description = "Supremium Ingot",
-    inventory_image = "froager2_supremium_ingot.png",
-})
 
-minetest.register_craftitem("froager2:osphor_ingot", {
-    description = "Osphor Ingot",
-    inventory_image = "froager2_osphor_ingot.png",
-})
-
-minetest.register_craftitem("froager2:osphor_nugget", {
-    description = "Osphor Nugget",
-    inventory_image = "froager2_osphor_nugget.png",
-})
+craftitem_register("supremium_ingot", "Supremium Ingot", "froager2_supremium_ingot.png")
+craftitem_register("osphor_ingot", "Osphor Ingot", "froager2_osphor_ingot.png")
+craftitem_register("osphor_nugget", "Osphor Nugget", "froager2_osphor_nugget.png")
 
 --energized ingots
 local function item_energized_supremium_ingot(color, color_capitalised)
@@ -81,11 +72,5 @@ item_energized_supremium_ingot("purple", "Purple")
 
 
 --singularity
-minetest.register_craftitem("froager2:supremium_singularity", {
-    description = "Supremium Singularity",
-    inventory_image = "froager2_supremium_singularity.png",
-})
-minetest.register_craftitem("froager2:steel_rod", {
-  description = "Steel Rod",
-  inventory_image = "froager2_steel_rod.png",
-})
+craftitem_register("supremium_singularity", "Supremium Singularity", "froager2_supremium_singularity.png")
+craftitem_register("steel_rod", "Steel Rod", "froager2_steel_rod.png")
