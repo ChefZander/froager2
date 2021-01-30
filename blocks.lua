@@ -72,6 +72,6 @@ minetest.register_node("froager2:cobble", {
 
 minetest.register_node("froager2:block_osphor", {
 	description = "Osphor Block",
-	tiles = {"missing.png"},
+	tiles = {"block_osphor.png"},
 	groups = {cracky = 2},
 })
