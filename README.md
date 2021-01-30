@@ -7,5 +7,5 @@ Original Code by Zander_200
 Modified by every contributor
 
 #### License for Media  
-Textures by Joaquín Villalba (Dragonop) CC-BY-SA 4.0  
+Textures and models by Joaquín Villalba (Dragonop) CC-BY-SA 4.0  
 Original concept drafts by Zander_200  

@@ -86,7 +86,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "froager2:hammer_iron",
+	output = "froager2:hammer",
 	recipe = {
 		{"default:steelblock", "default:steelblock", "default:steelblock"},
 		{"", "default:stick", ""},
