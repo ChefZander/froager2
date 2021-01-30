@@ -75,3 +75,12 @@ minetest.register_craft({
 		{"", "froager2:energy_kinetic_purple", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:forge",
+	recipe = {
+		{"", "froager2:hammer_iron", ""},
+		{"default:steelblock", "default:steelblock", "default:steelblock"},
+		{"default:steelblock", "default:furnace", "default:steelblock"},
+	}
+})

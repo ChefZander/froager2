@@ -284,6 +284,7 @@ minetest.register_node("froager2:forge", {
 	legacy_facedir_simple = true,
 	sounds = default.node_sound_stone_defaults(),
 	groups = {cracky = 2},
+	stack_max = 1,
 	
 	can_dig = can_dig,
 
