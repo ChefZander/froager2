@@ -102,3 +102,30 @@ minetest.register_craft({
 		{"osphor_ingot", "osphor_ingot", "osphor_ingot"},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:material_plastic",
+	recipe = {
+		{"", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "froager2:compressed_leaves",
+	recipe = {
+		{"", "group:leaves", ""},
+		{"group:leaves", "group:leaves", "group:leaves"},
+		{"", "group:leaves", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "froager2:bottle",
+	recipe = {
+		{"", "froager2:material_plastic", ""},
+		{"froager2:material_plastic", "bucket:bucket_empty", "froager2:material_plastic"},
+		{"froager2:material_plastic", "froager2:material_plastic", "froager2:material_plastic"},
+	}
+})
