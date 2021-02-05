@@ -111,3 +111,14 @@ minetest.register_craft({
 		{"", "group:leaves", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:biomass",
+	recipe = {
+		{"", "froager2:compressed_leaves", ""},
+		{"froager2:compressed_leaves", "default:stick", "froager2:compressed_leaves"},
+		{"", "froager2:compressed_leaves", ""},
+	}
+})
+
+-- {"", "", ""},
