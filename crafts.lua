@@ -120,12 +120,3 @@ minetest.register_craft({
 		{"", "group:leaves", ""},
 	}
 })
-
-minetest.register_craft({
-	output = "froager2:bottle",
-	recipe = {
-		{"", "froager2:material_plastic", ""},
-		{"froager2:material_plastic", "bucket:bucket_empty", "froager2:material_plastic"},
-		{"froager2:material_plastic", "froager2:material_plastic", "froager2:material_plastic"},
-	}
-})
