@@ -104,15 +104,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "froager2:material_plastic",
-	recipe = {
-		{"", "", ""},
-		{"", "", ""},
-		{"", "", ""},
-	}
-})
-
-minetest.register_craft({
 	output = "froager2:compressed_leaves",
 	recipe = {
 		{"", "group:leaves", ""},

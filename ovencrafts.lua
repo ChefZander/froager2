@@ -15,4 +15,10 @@ minetest.register_craft({
 	type = "cooking",
 	recipe = "froager2:osphor_nugget",
 	output = "froager2:osphor_ingot",
-	})
+})
+
+minetest.register_craft({
+	type = "cooking",
+	recipe = "froager2:biomass",
+	output = "froager2:material_plastic",
+})
