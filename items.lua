@@ -74,3 +74,7 @@ item_energized_supremium_ingot("purple", "Purple")
 --singularity
 craftitem_register("supremium_singularity", "Supremium Singularity", "froager2_supremium_singularity.png")
 craftitem_register("steel_rod", "Steel Rod", "froager2_steel_rod.png")
+
+craftitem_register("biomass", "Biomass", "missing.png")
+craftitem_register("biofuel", "Bio Fuel", "missing.png")
+craftitem_register("compressed_leaves", "Compressed Leaves", "missing.png")
