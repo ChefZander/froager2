@@ -79,4 +79,4 @@ craftitem_register("biomass", "Biomass", "missing.png")
 craftitem_register("bottle_biofuel", "Biofuel in a bottle", "missing.png")
 craftitem_register("compressed_leaves", "Compressed Leaves", "missing.png")
 
-craftitem_register("material_plastic", "Plastic", "missing.png")
+craftitem_register("material_plastic", "Plastic", "material_plastic.png")
