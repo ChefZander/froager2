@@ -87,3 +87,13 @@ craftitem_register("mana_powder", "Mana Powder", "mana_powder.png")
 
 craftitem_register("essence_agricum", "Agricum Essence", "essence_agricum.png")
 craftitem_register("essence_inferium", "Inferium Essence", "essence_inferium.png")
+
+craftitem_register("essence_dirt", "Dirt Essence", "essence_inferium.png")
+craftitem_register("essence_stone", "Stone Essence", "essence_inferium.png")
+craftitem_register("essence_coal", "Coal Essence", "essence_inferium.png")
+craftitem_register("essence_iron", "Iron Essence", "essence_inferium.png")
+craftitem_register("essence_copper", "Copper Essence", "essence_inferium.png")
+craftitem_register("essence_tin", "Tin Essence", "essence_inferium.png")
+craftitem_register("essence_gold", "Gold Essence", "essence_inferium.png")
+craftitem_register("essence_mese", "Mese Essence", "essence_inferium.png")
+craftitem_register("essence_diamond", "Diamond Essence", "essence_inferium.png")
