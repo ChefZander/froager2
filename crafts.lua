@@ -121,4 +121,21 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "froager2:essence_agricum",
+	recipe = {
+		{"", "froager2:mana_powder", ""},
+		{"froager2:mana_powder", "froager2:fusionator", "froager2:mana_powder"},
+		{"", "froager2:mana_powder", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "froager2:essence_inferium",
+	recipe = {
+		{"", "froager2:essence_agricum", ""},
+		{"froager2:essence_agricum", "froager2:fusionator", "froager2:essence_agricum"},
+		{"", "froager2:essence_agricum", ""},
+	}
+})
 -- {"", "", ""},
