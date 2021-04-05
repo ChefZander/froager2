@@ -75,3 +75,9 @@ minetest.register_node("froager2:block_osphor", {
 	tiles = {"block_osphor.png"},
 	groups = {cracky = 2},
 })
+
+minetest.register_node("froager2:ore_mana", {
+	description = "Mana Ore",
+	tiles = {"ore_mana.png"},
+	groups = {cracky = 3},
+})
