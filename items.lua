@@ -84,3 +84,6 @@ craftitem_register("compressed_leaves", "Compressed Leaves", "compressed_leaves.
 craftitem_register("material_plastic", "Plastic", "material_plastic.png")
 
 craftitem_register("mana_powder", "Mana Powder", "mana_powder.png")
+
+craftitem_register("essence_agricum", "Agricum Essence", "essence_agricum.png")
+craftitem_register("essence_inferium", "Inferium Essence", "essence_inferium.png")
