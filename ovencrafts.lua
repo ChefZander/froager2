@@ -22,3 +22,9 @@ minetest.register_craft({
 	recipe = "froager2:biomass",
 	output = "froager2:material_plastic",
 })
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "froager2:biomass",
+	burntime = 7,
+})
