@@ -26,3 +26,14 @@ minetest.register_ore({
   y_max          = -31000,
   y_min          = -30,
 })
+
+minetest.register_ore({
+  ore_type       = "scatter",
+  ore            = "froager2:ore_mana",
+  wherein        = "default:stone",
+  clust_scarcity = 9 * 9 * 9,
+  clust_num_ores = 12,
+  clust_size     = 2,
+  y_max          = -300,
+  y_min          = -100,
+})
