@@ -76,9 +76,11 @@ craftitem_register("supremium_singularity", "Supremium Singularity", "froager2_s
 
 craftitem_register("steel_rod", "Steel Rod", "froager2_steel_rod.png")
 
-craftitem_register("biomass", "Biomass", "missing.png")
-craftitem_register("bottle_biofuel", "Biofuel in a bottle", "missing.png")
+craftitem_register("biomass", "Biomass", "biomass.png")
+craftitem_register("bottle_biofuel", "Biofuel in a bottle", "bottle_biofuel.png")
 
-craftitem_register("compressed_leaves", "Compressed Leaves", "missing.png")
+craftitem_register("compressed_leaves", "Compressed Leaves", "compressed_leaves.png")
 
 craftitem_register("material_plastic", "Plastic", "material_plastic.png")
+
+craftitem_register("mana_powder", "Mana Powder", "mana_powder.png")
