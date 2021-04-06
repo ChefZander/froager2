@@ -81,3 +81,9 @@ minetest.register_node("froager2:ore_mana", {
 	tiles = {"ore_mana.png"},
 	groups = {cracky = 3},
 })
+
+minetest.register_node("froager2:ore_uranium", {
+	description = "Uranium Ore",
+	tiles = {"ore_uranium.png"},
+	groups = {cracky = 3},
+})
