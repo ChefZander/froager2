@@ -103,3 +103,4 @@ craftitem_register("essence_diamond", "Diamond Essence", "essence_diamond.png")
 craftitem_register("essence_uranium", "Uranium Essence", "essence_uranium.png")
 
 craftitem_register("shard_uranium", "Uranium Shard", "shard_uranium.png")
+craftitem_register("ingot_uranium", "Uranium Ingot", "ingot_uranium.png")
