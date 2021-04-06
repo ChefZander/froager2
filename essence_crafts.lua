@@ -79,4 +79,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_uranium",
+    recipe = {
+        {"froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium"},
+        {"froager2:shard_uranium", "group:kinetic_energy", "froager2:shard_uranium"},
+        {"froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium"},
+    }
+})
+
 -- {"", "", ""},
