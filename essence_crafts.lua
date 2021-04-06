@@ -7,4 +7,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_stone",
+    recipe = {
+        {"group:stone", "group:stone", ""},
+        {"group:stone", "group:stone", ""},
+        {"", "", ""},
+    }
+})
+
 -- {"", "", ""},
