@@ -97,3 +97,5 @@ craftitem_register("essence_tin", "Tin Essence", "essence_tin.png")
 craftitem_register("essence_gold", "Gold Essence", "essence_gold.png")
 craftitem_register("essence_mese", "Mese Essence", "essence_mese.png")
 craftitem_register("essence_diamond", "Diamond Essence", "essence_diamond.png")
+
+craftitem_register("shard_uranium", "Uranium Shard", "shard_uranium.png")
