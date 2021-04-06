@@ -16,4 +16,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_coal",
+    recipe = {
+        {"group:coal", "group:coal", "group:coal"},
+        {"group:coal", "group:kinetic_energy", "group:coal"},
+        {"group:coal", "group:coal", "group:coal"},
+    }
+})
+
 -- {"", "", ""},
