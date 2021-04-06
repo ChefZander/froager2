@@ -43,4 +43,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_tin",
+    recipe = {
+        {"default:tin_ingot", "default:tin_ingot", "default:tin_ingot"},
+        {"default:tin_ingot", "group:kinetic_energy", "default:tin_ingot"},
+        {"default:tin_ingot", "default:tin_ingot", "default:tin_ingot"},
+    }
+})
+
 -- {"", "", ""},
