@@ -138,4 +138,10 @@ minetest.register_craft({
 		{"", "froager2:essence_agricum", ""},
 	}
 })
+
+minetest.register_craft({
+	type = "shapeless",
+	output = "froager2:ingot_uranium",
+	recipe = {"froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium"},
+})
 -- {"", "", ""},
