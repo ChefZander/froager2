@@ -25,4 +25,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_iron",
+    recipe = {
+        {"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
+        {"default:steel_ingot", "group:kinetic_energy", "default:steel_ingot"},
+        {"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
+    }
+})
+
 -- {"", "", ""},
