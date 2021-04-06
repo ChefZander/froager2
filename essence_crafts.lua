@@ -34,4 +34,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_copper",
+    recipe = {
+        {"default:copper_ingot", "default:copper_ingot", "default:copper_ingot"},
+        {"default:copper_ingot", "group:kinetic_energy", "default:copper_ingot"},
+        {"default:copper_ingot", "default:copper_ingot", "default:copper_ingot"},
+    }
+})
+
 -- {"", "", ""},
