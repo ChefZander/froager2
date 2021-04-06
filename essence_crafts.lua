@@ -61,4 +61,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_mese",
+    recipe = {
+        {"default:mese_crystal", "default:mese_crystal", "default:mese_crystal"},
+        {"default:mese_crystal", "group:kinetic_energy", "default:mese_crystal"},
+        {"default:mese_crystal", "default:mese_crystal", "default:mese_crystal"},
+    }
+})
+
 -- {"", "", ""},
