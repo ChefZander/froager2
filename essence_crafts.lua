@@ -70,4 +70,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_diamond",
+    recipe = {
+        {"default:diamond", "default:diamond", "default:diamond"},
+        {"default:diamond", "group:kinetic_energy", "default:diamond"},
+        {"default:diamond", "default:diamond", "default:diamond"},
+    }
+})
+
 -- {"", "", ""},
