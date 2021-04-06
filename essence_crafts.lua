@@ -52,4 +52,13 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "froager2:essence_gold",
+    recipe = {
+        {"default:gold_ingot", "default:gold_ingot", "default:gold_ingot"},
+        {"default:gold_ingot", "group:kinetic_energy", "default:gold_ingot"},
+        {"default:gold_ingot", "default:gold_ingot", "default:gold_ingot"},
+    }
+})
+
 -- {"", "", ""},
