@@ -42,7 +42,7 @@ local function item_energy_kinetic(color, color_capitalised)
       description = color_capitalised .. " Kinetic Energy",
 	  --apply the overlay as a mask (uses binary and)
 	  inventory_image = "froager2_energy_"..color..".png^[mask:froager2_energy_kinetic_overlay.png", 
-	  groups = {energy = 15, forgeable = 5}, -- Forge energy power (burntime)
+	  groups = {energy = 15, forgeable = 5, kinetic_energy}, -- Forge energy power (burntime)
     })
 end
 
