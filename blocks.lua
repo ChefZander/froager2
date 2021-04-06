@@ -86,4 +86,5 @@ minetest.register_node("froager2:ore_uranium", {
 	description = "Uranium Ore",
 	tiles = {"ore_uranium.png"},
 	groups = {cracky = 3},
+	drop = "froager2:shard_uranium",
 })
