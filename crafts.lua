@@ -144,4 +144,10 @@ minetest.register_craft({
 	output = "froager2:ingot_uranium",
 	recipe = {"froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium", "froager2:shard_uranium"},
 })
+
+minetest.register_craft({
+	type = "shapeless",
+	output = "froager2:shard_uranium 6",
+	recipe = {"froager2:ingot_uranium"},
+})
 -- {"", "", ""},
