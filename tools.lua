@@ -18,7 +18,7 @@ register_energixed_supremium_pick("purple", "Purple")
 
 minetest.register_tool("froager2:pick_osphor", {
       description = "Osphor Pickaxe",
-      inventory_image = "missing.png",
+      inventory_image = "pickaxe_osphor.png",
       tool_capabilities = {
           max_drop_level=3,
           groupcaps= {
