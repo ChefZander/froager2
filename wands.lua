@@ -59,15 +59,24 @@ minetest.register_craftitem("froager2:fire_wand", {
 
 local fireballtimer = {}
 FIREBALL_ENTITY.on_step = function(self, dtime)
+	if not fireballtimer[self] then
+		fireballtimer[self] = 0
+	end
 	fireballtimer[self] = fireballtimer[self]+dtime
 	if fireballtimer[self] >= 1 then
 		local objects = minetest.get_objects_inside_radius(self.object:get_pos(), 0.75)
 		for _,obj in ipairs(objects) do
-			if obj:is_player() then
+			if obj:is_player() then--damage to players
 				local hp = obj:get_hp()
 				obj:set_hp(hp-4)
 				self.object:remove()
 			end
 		end
 	end
+	--checks for collisions with nodes
+	local pos = self.object:get_pos()
+	local node = minetest.get_node(pos)
+	if node.name == "air" then return end
+	minetest.chat_send_all(node.name)
+	minetest.chat_send_all("collision... yay")
 end
