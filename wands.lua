@@ -29,11 +29,11 @@ minetest.register_entity("froager2:fireball", FIREBALL_ENTITY)
 
 local spawn_fireball = function(player)
 	if cooldown[player:get_player_name()] then
-		minetest.chat_send_player(player:get_player_name(), "Please wait for your 3 second cooldown to end")
+		minetest.chat_send_player(player:get_player_name(), "Please wait for your 0 second cooldown to end")
 		return
 	end
 	cooldown[player:get_player_name()] = true
-	minetest.after(3, function()
+	minetest.after(0, function()
 		cooldown[player:get_player_name()] = false
 	end)
 	local obj = minetest.add_entity(vector.add(player:get_pos(), {x = 0, y = 1.5, z = 0}), "froager2:fireball")
