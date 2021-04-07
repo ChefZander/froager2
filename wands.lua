@@ -10,7 +10,7 @@ end)
 
 local FIREBALL_ENTITY = {
     hp_max = 1,
-    physical = true,
+    physical = false,
     weight = 5,
     collisionbox = {-0.25,-0.25,-0.25, 0.25,0.25,0.25},
     visual = "cube",
@@ -57,6 +57,15 @@ minetest.register_craftitem("froager2:fire_wand", {
     end
 })
 
+local on_collide = function(self, pos)
+	self.object:remove()
+	local minp = vector.add(pos, {x = -1, y = -1, z = -1})
+	local maxp = vector.add(pos, {x = 1, y = 1, z = 1})
+	for _,airpos in ipairs(minetest.find_nodes_in_area(minp, maxp, "air")) do
+		minetest.set_node(airpos, {name="fire:basic_flame"})
+	end
+end
+
 local fireballtimer = {}
 FIREBALL_ENTITY.on_step = function(self, dtime)
 	if not fireballtimer[self] then
@@ -77,6 +86,5 @@ FIREBALL_ENTITY.on_step = function(self, dtime)
 	local pos = self.object:get_pos()
 	local node = minetest.get_node(pos)
 	if node.name == "air" then return end
-	minetest.chat_send_all(node.name)
-	minetest.chat_send_all("collision... yay")
+	on_collide(self, pos)
 end
