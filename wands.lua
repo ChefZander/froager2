@@ -6,7 +6,7 @@ local FIREBALL_ENTITY = {
     visual = "cube",
     visual_size = {x=1, y=1},
     mesh = "model",
-    textures = {"fireball.png"}, -- number of required textures depends on visual
+    textures = {"fireball.png", "fireball.png", "fireball.png", "fireball.png", "fireball.png", "fireball.png"}, -- number of required textures depends on visual
     colors = {}, -- number of required colors depends on visual
     spritediv = {x=1, y=1},
     initial_sprite_basepos = {x=0, y=0},
