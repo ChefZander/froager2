@@ -34,7 +34,7 @@ local spawn_fireball = function(player)
 	end
 	cooldown[player:get_player_name()] = true
 	minetest.after(5, function()
-		print("First Environment step run")
+		cooldown[player:get_player_name()] = false
 	end)
 	local obj = minetest.add_entity(vector.add(player:get_pos(), {x = 0, y = 1.5, z = 0}), "froager2:fireball")
 	local yaw = player:get_look_horizontal()
