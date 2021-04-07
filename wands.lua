@@ -86,6 +86,5 @@ FIREBALL_ENTITY.on_step = function(self, dtime)
 	local pos = self.object:get_pos()
 	local node = minetest.get_node(pos)
 	if node.name == "air" then return end
-	if node.name == "default:water_source" then return end
 	on_collide(self, pos)
 end
