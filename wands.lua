@@ -12,9 +12,9 @@ local FIREBALL_ENTITY = {
     hp_max = 1,
     physical = true,
     weight = 5,
-    collisionbox = {-0.5,-0.5,-0.5, 0.5,0.5,0.5},
+    collisionbox = {-0.25,-0.25,-0.25, 0.25,0.25,0.25},
     visual = "cube",
-    visual_size = {x=1, y=1},
+    visual_size = {x=0.5, y=0.5},
     mesh = "model",
     textures = {"fireball.png", "fireball.png", "fireball.png", "fireball.png", "fireball.png", "fireball.png"}, -- number of required textures depends on visual
     colors = {}, -- number of required colors depends on visual
@@ -40,7 +40,7 @@ local spawn_fireball = function(player)
 	local yaw = player:get_look_horizontal()
 	local dir = player:get_look_dir()
 	if obj then
-		obj:set_velocity(vector.multiply(dir, 20))
+		obj:set_velocity(vector.multiply(dir, 5))
 		obj:set_yaw(yaw)
 	end
 end
@@ -56,3 +56,18 @@ minetest.register_craftitem("froager2:fire_wand", {
     	spawn_fireball(user)
     end
 })
+
+local fireballtimer = {}
+FIREBALL_ENTITY.on_step = function(self, dtime)
+	fireballtimer[self] = fireballtimer[self]+dtime
+	if fireballtimer[self] >= 1 then
+		local objects = minetest.get_objects_inside_radius(self.object:get_pos(), 0.75)
+		for _,obj in ipairs(objects) do
+			if obj:is_player() then
+				local hp = obj:get_hp()
+				obj:set_hp(hp-4)
+				self.object:remove()
+			end
+		end
+	end
+end
