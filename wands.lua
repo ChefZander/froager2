@@ -1,3 +1,13 @@
+local cooldown = {}
+
+minetest.register_on_joinplayer(function(player)
+	cooldown[player:get_player_name()] = false
+end)
+
+minetest.register_on_leaveplayer(function(player)
+	cooldown[player:get_player_name()] = false
+end)
+
 local FIREBALL_ENTITY = {
     hp_max = 1,
     physical = true,
@@ -12,12 +22,20 @@ local FIREBALL_ENTITY = {
     initial_sprite_basepos = {x=0, y=0},
     is_visible = true,
     makes_footstep_sound = false,
-    automatic_rotate = false,
+    automatic_rotate = 0,
 }
 
 minetest.register_entity("froager2:fireball", FIREBALL_ENTITY)
 
 local spawn_fireball = function(player)
+	if cooldown[player:get_player_name()] then
+		minetest.chat_send_player(player:get_player_name(), "Please wait for your 5 second cooldown to end")
+		return
+	end
+	cooldown[player:get_player_name()] = true
+	minetest.after(5, function()
+		print("First Environment step run")
+	end)
 	local obj = minetest.add_entity(vector.add(player:get_pos(), {x = 0, y = 1.5, z = 0}), "froager2:fireball")
 	local yaw = player:get_look_horizontal()
 	local dir = player:get_look_dir()
