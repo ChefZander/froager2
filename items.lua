@@ -99,8 +99,12 @@ craftitem_register("essence_gold", "Gold Essence", "essence_gold.png")
 craftitem_register("essence_mese", "Mese Essence", "essence_mese.png")
 craftitem_register("essence_diamond", "Diamond Essence", "essence_diamond.png")
 
---custom essences
+--uranium
 craftitem_register("essence_uranium", "Uranium Essence", "essence_uranium.png")
-
 craftitem_register("shard_uranium", "Uranium Shard", "shard_uranium.png")
 craftitem_register("ingot_uranium", "Uranium Ingot", "ingot_uranium.png")
+
+--lithium
+craftitem_register("essence_lithium", "Lithium Essence", "essence_lithium.png")
+craftitem_register("shard_lithium", "Lithium Shard", "shard_lithium.png")
+craftitem_register("ingot_lithium", "Lithium Ingot", "ingot_lithium.png")
