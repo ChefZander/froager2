@@ -19,6 +19,15 @@ local function craft_energized_supremium_ingot(color)
 	})
 end
 
+minetest.register_craft({
+	output = "froager2:supremium_ingot_universal",
+	recipe = {
+		{"", "froager2:energized_supremium_ingot_red", ""},
+		{"froager2:energized_supremium_ingot_green", "froager2:fusionator", "froager2:energized_supremium_ingot_blue"},
+		{"", "froager2:energized_supremium_ingot_purple", ""},
+	}
+})
+
 craft_energized_supremium_ingot("red")
 craft_energized_supremium_ingot("blue")
 craft_energized_supremium_ingot("green")

@@ -70,6 +70,10 @@ item_energized_supremium_ingot("blue", "Blue")
 item_energized_supremium_ingot("green", "Green")
 item_energized_supremium_ingot("purple", "Purple")
 
+minetest.register_craftitem("froager2:supremium_ingot_universal", {
+  description = "Universal Supremium Ingot",
+  inventory_image = "froager2_supremium_ingot.png^froager2_outline_universal.png",
+})
 
 --singularity
 craftitem_register("supremium_singularity", "Supremium Singularity", "froager2_supremium_singularity.png")
@@ -108,3 +112,6 @@ craftitem_register("ingot_uranium", "Uranium Ingot", "ingot_uranium.png")
 craftitem_register("essence_lithium", "Lithium Essence", "essence_lithium.png")
 craftitem_register("shard_lithium", "Lithium Shard", "shard_lithium.png")
 craftitem_register("ingot_lithium", "Lithium Ingot", "ingot_lithium.png")
+
+-- the end
+craftitem_register("infinity_catalyst", "Infinity Catalyst", "infinity_catalyst.png")
