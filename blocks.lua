@@ -1,6 +1,6 @@
 local function ore_register(color, color_capitalized)
 	minetest.register_node("froager2:orb_ore_"..color, {
-		description = color_capitalized .. " Orb Ore <Hidden>",
+		description = color_capitalized .. " Orb Ore",
 		tiles = {"default_stone.png^froager2_ore_orb_"..color..".png^froager2_outline_"..color..".png"},
 		drop = {
 			max_items = 1,
@@ -18,7 +18,7 @@ ore_register("red", "Red")
 ore_register("purple", "Purple")
 
 minetest.register_node("froager2:ore_osphor", {
-	description = "Osphor Ore <Hidden>",
+	description = "Osphor Ore",
 	tiles = {"default_stone.png^froager2_ore_osphor.png"},
 	drop = {
 			max_items = 3,
