@@ -27,13 +27,13 @@ local FIREBALL_ENTITY = {
 
 minetest.register_entity("froager2:fireball", FIREBALL_ENTITY)
 
-local spawn_fireball = function(player)
+local spawn_fireball = function(player, cooldown_time)
 	if cooldown[player:get_player_name()] then
-		minetest.chat_send_player(player:get_player_name(), "Please wait for your 0 second cooldown to end")
+		minetest.chat_send_player(player:get_player_name(), "Please wait for your "..tostring(cooldown_time).." second cooldown to end")
 		return
 	end
 	cooldown[player:get_player_name()] = true
-	minetest.after(0, function()
+	minetest.after(cooldown_time, function()
 		cooldown[player:get_player_name()] = false
 	end)
 	local obj = minetest.add_entity(vector.add(player:get_pos(), {x = 0, y = 1.5, z = 0}), "froager2:fireball")
@@ -45,17 +45,23 @@ local spawn_fireball = function(player)
 	end
 end
 
-minetest.register_craftitem("froager2:fire_wand", {
-	description = "Fire wand",
-	inventory_image = "default_stick.png",
-	stack_max = 1,
-    on_place = function(itemstack, placer, pointed_thing)
-      spawn_fireball(placer)
-    end,
-    on_secondary_use = function(itemstack, user, pointed_thing)
-    	spawn_fireball(user)
-    end
-})
+local function fire_wand(level, cooldown_time)
+	minetest.register_craftitem("froager2:fire_wand_"..level, {
+		description = "Fire wand: Level "..level,
+		inventory_image = "default_stick.png",
+		stack_max = 1,
+		on_place = function(itemstack, placer, pointed_thing)
+			spawn_fireball(placer, cooldown_time)
+		end,
+		on_secondary_use = function(itemstack, user, pointed_thing)
+			spawn_fireball(user, cooldown_time)
+		end
+	})
+end
+
+fire_wand("1", 5)
+fire_wand("2", 3)
+fire_wand("3", 1)
 
 local on_collide = function(self, pos)
 	self.object:remove()
