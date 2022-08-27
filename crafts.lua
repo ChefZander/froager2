@@ -53,9 +53,18 @@ craft_energized_supremium_pick("purple")
 minetest.register_craft({
 	output = "froager2:supremium_singularity",
 	recipe = {
-		{"", "froager2:energized_supremium_ingot_red", ""},
-		{"froager2:energized_supremium_ingot_green", "froager2:fusionator", "froager2:energized_supremium_ingot_blue"},
-		{"", "froager2:energized_supremium_ingot_purple", ""},
+		{"froager2:energy_kinetic_red", "froager2:energized_supremium_ingot_red", "froager2:energy_kinetic_green"},
+		{"froager2:energized_supremium_ingot_green", "froager2:ultimate_fusionator", "froager2:energized_supremium_ingot_blue"},
+		{"froager2:energy_kinetic_purple", "froager2:energized_supremium_ingot_purple", "froager2:energy_kinetic_blue"},
+	},
+})
+
+minetest.register_craft({
+	output = "froager2:energy_infinity",
+	recipe = {
+		{"froager2:energy_kinetic_red", "froager2:", "froager2:energy_kinetic_green"},
+		{"froager2:", "froager2:ultimate_fusionator", "froager2:"},
+		{"froager2:energy_kinetic_purple", "froager2:", "froager2:energy_kinetic_blue"},
 	},
 })
 
@@ -67,6 +76,16 @@ minetest.register_craft({
 		{"", "froager2:steel_rod", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:ultimate_fusionator",
+	recipe = {
+		{"froager2:energy_kinetic_red", "froager2:steel_rod", "froager2:energy_kinetic_green"},
+		{"froager2:steel_rod", "froager2:fusionator", "froager2:steel_rod"},
+		{"froager2:energy_kinetic_purple", "froager2:steel_rod", "froager2:energy_kinetic_blue"},
+	}
+})
+
 minetest.register_craft({
 	output = "froager2:steel_rod",
 	recipe = {

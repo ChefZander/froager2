@@ -7,6 +7,7 @@ local function craftitem_register(name, description, inv_img)
 end
 
 craftitem_register("fusionator", "Fusionator", "froager2_fusionator.png")
+craftitem_register("ultimate_fusionator", "Ultimate Fusionator", "froager2_ultimate_fusionator.png")
 craftitem_register("fusioncore", "Fusion Core", "froager2_fusioncore.png")
 
 --orbs
@@ -115,3 +116,5 @@ craftitem_register("ingot_lithium", "Lithium Ingot", "ingot_lithium.png")
 
 -- the end
 craftitem_register("infinity_catalyst", "Infinity Catalyst", "infinity_catalyst.png")
+craftitem_register("infinity_essence", "Infinity Essence", "essence_infinity.png")
+craftitem_register("infinity_energy", "Infinity Energy", "energy_infinity.png")
