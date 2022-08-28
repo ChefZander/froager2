@@ -26,3 +26,14 @@ minetest.register_tool("froager2:pick_osphor", {
           }
       }
   })
+
+minetest.register_tool("froager2:drill", {
+    description = "Drill",
+    inventory_image = "drill.png",
+    tool_capabilities = {
+        max_drop_level=3,
+        groupcaps= {
+            cracky={times={[1]=0.3, [2]=0.5, [3]=0.7}, uses=250, maxlevel=2}
+        }
+    }
+})

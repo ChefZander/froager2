@@ -80,6 +80,8 @@ minetest.register_craftitem("froager2:supremium_ingot_universal", {
 craftitem_register("supremium_singularity", "Supremium Singularity", "froager2_supremium_singularity.png")
 
 craftitem_register("steel_rod", "Steel Rod", "froager2_steel_rod.png")
+craftitem_register("steel_screw", "Steel Screw", "steel_screw.png")
+craftitem_register("steel_bar", "Steel Bar", "steel_bar.png")
 
 craftitem_register("biomass", "Biomass", "biomass.png")
 craftitem_register("bottle_biofuel", "Biofuel in a bottle", "bottle_biofuel.png")
