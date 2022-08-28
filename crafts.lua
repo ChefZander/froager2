@@ -60,11 +60,11 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "froager2:energy_infinity",
+	output = "froager2:infinity_energy",
 	recipe = {
-		{"froager2:energy_kinetic_red", "froager2:", "froager2:energy_kinetic_green"},
-		{"froager2:", "froager2:ultimate_fusionator", "froager2:"},
-		{"froager2:energy_kinetic_purple", "froager2:", "froager2:energy_kinetic_blue"},
+		{"froager2:energy_kinetic_red", "froager2:energy_red", "froager2:energy_kinetic_green"},
+		{"froager2:energy_green", "froager2:ultimate_fusionator", "froager2:energy_purple"},
+		{"froager2:energy_kinetic_purple", "froager2:energy_blue", "froager2:energy_kinetic_blue"},
 	},
 })
 
@@ -191,6 +191,15 @@ minetest.register_craft({
 		{"", "froager2:steel_rod", ""},
 		{"froager2:steel_rod", "", "froager2:steel_rod"},
 		{"", "froager2:steel_rod", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "froager2:circuit_basic",
+	recipe = {
+		{"froager2:steel_screw", "", "froager2:steel_screw"},
+		{"", "default:gold_ingot", ""},
+		{"froager2:steel_screw", "froager2:material_plastic", "froager2:steel_screw"},
 	}
 })
 -- {"", "", ""},

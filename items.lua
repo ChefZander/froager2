@@ -83,6 +83,13 @@ craftitem_register("steel_rod", "Steel Rod", "froager2_steel_rod.png")
 craftitem_register("steel_screw", "Steel Screw", "steel_screw.png")
 craftitem_register("steel_bar", "Steel Bar", "steel_bar.png")
 
+
+craftitem_register("circuit_basic", "Cirucit (Basic)", "circuit_basic.png")
+craftitem_register("circuit_advanced", "Cirucit (Advanced)", "circuit_advanced.png")
+craftitem_register("circuit_ultimate", "Cirucit (Ultimate)", "circuit_ultimate.png")
+
+craftitem_register("drill_controller", "Drill Controller", "drill_controller.png")
+
 craftitem_register("biomass", "Biomass", "biomass.png")
 craftitem_register("bottle_biofuel", "Biofuel in a bottle", "bottle_biofuel.png")
 
