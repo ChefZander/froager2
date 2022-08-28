@@ -5,9 +5,10 @@ local function register_energixed_supremium_pick(color, color_capitalized)
       tool_capabilities = {
           max_drop_level=3,
           groupcaps= {
-              cracky={times={[1]=1.00, [2]=0.375, [3]=0.25}, uses=170, maxlevel=1}
+              cracky={times={[1]=1.00, [2]=0.375, [3]=0.25}, uses=170, maxlevel=3}
           }
-      }
+      },
+      groups = {pickaxe = 1}
   })
 end
 
@@ -22,18 +23,21 @@ minetest.register_tool("froager2:pick_osphor", {
       tool_capabilities = {
           max_drop_level=3,
           groupcaps= {
-              cracky={times={[1]=0.5, [2]=0.75, [3]=1.00}, uses=130, maxlevel=1}
+              cracky={times={[1]=0.5, [2]=0.75, [3]=1.00}, uses=130, maxlevel=3}
           }
-      }
+      },
+      groups = {pickaxe = 1}
   })
 
 minetest.register_tool("froager2:drill", {
     description = "Drill",
     inventory_image = "drill.png",
     tool_capabilities = {
+		full_punch_interval = 0.9,
         max_drop_level=3,
         groupcaps= {
-            cracky={times={[1]=0.3, [2]=0.5, [3]=0.7}, uses=250, maxlevel=2}
+            cracky={times={[1]=2.0, [2]=0.7, [3]=0.5}, uses=250, maxlevel=3}
         }
-    }
+    },
+	groups = {pickaxe = 1}
 })
