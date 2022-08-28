@@ -202,4 +202,13 @@ minetest.register_craft({
 		{"froager2:steel_screw", "froager2:material_plastic", "froager2:steel_screw"},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:circuit_advanced",
+	recipe = {
+		{"froager2:material_plastic", "froager2:circuit_basic", "froager2:material_plastic"},
+		{"froager2:circuit_basic", "froager2:mana_powder", "froager2:circuit_basic"},
+		{"froager2:material_plastic", "froager2:circuit_basic", "froager2:material_plastic"},
+	}
+})
 -- {"", "", ""},
