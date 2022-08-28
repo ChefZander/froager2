@@ -220,4 +220,13 @@ minetest.register_craft({
 		{"froager2:steel_screw", "froager2:circuit_advanced", "froager2:steel_screw"},
 	}
 })
+
+minetest.register_craft({
+	output = "froager2:drill_controller",
+	recipe = {
+		{"froager2:steel_cable", "froager2:material_plastic", "froager2:steel_screw"},
+		{"default:gold_ingot", "froager2:circuit_advanced", "froager2:material_plastic"},
+		{"froager2:steel_screw", "froager2:circuit_basic", "froager2:steel_cable"},
+	}
+})
 -- {"", "", ""},
