@@ -128,3 +128,15 @@ craftitem_register("ingot_lithium", "Lithium Ingot", "ingot_lithium.png")
 craftitem_register("infinity_catalyst", "Infinity Catalyst", "infinity_catalyst.png")
 craftitem_register("infinity_essence", "Infinity Essence", "essence_infinity.png")
 craftitem_register("infinity_energy", "Infinity Energy", "energy_infinity.png")
+
+-- permaflight
+minetest.register_craftitem("froager2:angels_ring", {
+    description = "Angel's Ring",
+    inventory_image = "angels_ring.png",
+    on_use = function(itemstack, user, pointed_thing)
+        local privs = minetest.get_player_privs(user:get_player_name())
+        privs.fly = true
+        minetest.set_player_privs(user:get_player_name(), privs)
+        return itemstack
+    end
+})
