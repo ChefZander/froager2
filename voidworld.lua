@@ -9,6 +9,7 @@ minetest.register_node("froager2:spacestation_controller_fueled", {
         "spacestation_controller_side.png", -- z-
     },
 	groups = {cracky = 3},
+    light_source = minetest.LIGHT_MAX,
     on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
         if clicker:is_player() then
             if clicker:get_pos().y > 29000 then
