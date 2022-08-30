@@ -88,3 +88,21 @@ minetest.register_node("froager2:ore_uranium", {
 	groups = {cracky = 3},
 	drop = "froager2:shard_uranium",
 })
+
+minetest.register_node("froager2:fuel_spacestation", {
+	description = "Fuel Canister (Space Station Fuel)",
+	tiles = {"missing.png"},
+	groups = {cracky = 3},
+})
+
+minetest.register_node("froager2:fuel_rocket", {
+	description = "Fuel Canister (Rocket Fuel)",
+	tiles = {"missing.png"},
+	groups = {cracky = 3},
+})
+
+minetest.register_node("froager2:fuel_machinery", {
+	description = "Fuel Canister (Machinery Fuel)",
+	tiles = {"missing.png"},
+	groups = {cracky = 3},
+})
