@@ -1,5 +1,5 @@
 minetest.register_node("froager2:spacestation_controller_fueled", {
-	description = "Space Station Controller (Fueled)",
+	description = "Space Station Controller (Fueled)\n\nEPIC",
 	tiles = {
         "spacestation_controller_top.png",    -- y+
         "spacestation_controller_top.png",  -- y-
@@ -49,7 +49,7 @@ minetest.register_node("froager2:spacestation_controller_fueled", {
 })
 
 minetest.register_node("froager2:spacestation_controller", {
-    description = "Space Station Controller",
+    description = "Space Station Controller\n\nEPIC",
 	tiles = {
         "spacestation_controller_top_nofuel.png",    -- y+
         "spacestation_controller_top_nofuel.png",  -- y-

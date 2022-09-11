@@ -1,6 +1,6 @@
 local function ore_register(color, color_capitalized)
 	minetest.register_node("froager2:orb_ore_"..color, {
-		description = color_capitalized .. " Orb Ore",
+		description = color_capitalized .. " Orb Ore\n\nCOMMON",
 		tiles = {"default_stone.png^froager2_ore_orb_"..color..".png^froager2_outline_"..color..".png"},
 		drop = {
 			max_items = 1,
@@ -18,7 +18,7 @@ ore_register("red", "Red")
 ore_register("purple", "Purple")
 
 minetest.register_node("froager2:ore_osphor", {
-	description = "Osphor Ore",
+	description = "Osphor Ore\n\nUNCOMMON",
 	tiles = {"default_stone.png^froager2_ore_osphor.png"},
 	drop = {
 			max_items = 3,
@@ -36,14 +36,14 @@ minetest.register_node("froager2:ore_osphor", {
 
 --natural nodes
 minetest.register_node("froager2:dirt", {
-	description = "Energized Dirt",
+	description = "Energized Dirt\n\nCOMMON",
 	tiles = {"froager2_dirt.png"},
 	groups = {crumbly = 3, soil = 1},
 	sounds = default.node_sound_dirt_defaults(),
 })
 
 minetest.register_node("froager2:dirt_energized", {
-	description = "Insolated Energized Dirt",
+	description = "Insolated Energized Dirt\n\nCOMMON",
 	tiles = {"froager2_dirt_energized_top.png", "froager2_dirt.png",
 		{name = "froager2_dirt.png^froager2_dirt_energized_side.png",
 			tileable_vertical = false}},
@@ -55,7 +55,7 @@ minetest.register_node("froager2:dirt_energized", {
 })
 
 minetest.register_node("froager2:stone", {
-	description = "Energized Stone",
+	description = "Energized Stone\n\nCOMMON",
 	tiles = {"froager2_stone.png"},
 	groups = {cracky = 3, stone = 1},
 	drop = "froager2:cobble",
@@ -63,7 +63,7 @@ minetest.register_node("froager2:stone", {
 })
 
 minetest.register_node("froager2:cobble", {
-	description = "Cobbled Energized Stone",
+	description = "Cobbled Energized Stone\n\nCOMMON",
 	tiles = {"froager2_cobble.png"},
 	-- is_ground_content = false,
 	groups = {cracky = 3, stone = 2},
@@ -71,38 +71,38 @@ minetest.register_node("froager2:cobble", {
 })
 
 minetest.register_node("froager2:block_osphor", {
-	description = "Osphor Block",
+	description = "Osphor Block\n\nUNCOMMON",
 	tiles = {"block_osphor.png"},
 	groups = {cracky = 2},
 })
 
 minetest.register_node("froager2:ore_mana", {
-	description = "Mana Ore",
+	description = "Mana Ore\n\nUNCOMMON",
 	tiles = {"ore_mana.png"},
 	groups = {cracky = 3},
 })
 
 minetest.register_node("froager2:ore_uranium", {
-	description = "Uranium Ore",
+	description = "Uranium Ore\n\nUNCOMMON",
 	tiles = {"ore_uranium.png"},
 	groups = {cracky = 3},
 	drop = "froager2:shard_uranium",
 })
 
 minetest.register_node("froager2:fuel_spacestation", {
-	description = "Fuel Canister (Space Station Fuel)",
+	description = "Fuel Canister (Space Station Fuel)\n\nCOMMON",
 	tiles = {"missing.png"},
 	groups = {cracky = 3},
 })
 
 minetest.register_node("froager2:fuel_rocket", {
-	description = "Fuel Canister (Rocket Fuel)",
+	description = "Fuel Canister (Rocket Fuel)\n\nCOMMON",
 	tiles = {"missing.png"},
 	groups = {cracky = 3},
 })
 
 minetest.register_node("froager2:fuel_machinery", {
-	description = "Fuel Canister (Machinery Fuel)",
+	description = "Fuel Canister (Machinery Fuel)\n\nCOMMON",
 	tiles = {"missing.png"},
 	groups = {cracky = 3},
 })

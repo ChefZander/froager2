@@ -47,7 +47,7 @@ end
 
 local function fire_wand(level, cooldown_time)
 	minetest.register_craftitem("froager2:fire_wand_"..level, {
-		description = "Fire wand: Level "..level,
+		description = "Fire wand: Level "..level.." \nRight-Click: Spawn Fireball\nCooldown depends on wand level:\nL1: 5sec; L2: 3sec; L3: 1sec\n\nRARE",
 		inventory_image = "default_stick.png",
 		stack_max = 1,
 		on_place = function(itemstack, placer, pointed_thing)

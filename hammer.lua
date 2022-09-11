@@ -1,7 +1,7 @@
 -- hammer
 
 minetest.register_node("froager2:hammer", {
-	description = "Iron Hammer",
+	description = "Iron Hammer\n\nEPIC",
 	drawtype = "mesh",
 	mesh = "froager2_hammer.obj",
 	inventory_image = "froager2_hammer.png",
